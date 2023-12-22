@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ali's Website</title>
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+<link rel="icon" type="image/x-icon" href="https://i.postimg.cc/xTHBj0yX/Ali-Ahmadabadi-2-prev-ui.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<style>
+  iframe {
+    text-align: center;
+  }
+  hr {
+  border-top: 3px solid #1E90FF;
+}
+  .info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+  color: black;
+  text-align: left;
+}
+  .footer {
+  padding: 20px;
+  text-align: left;
+  background: #1E90FF;
+}
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.hero-text {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.hero-image {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+h1 {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+h2 {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  text-align: center;
+}
+p {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  text-align: center;
+}
+.sidebar {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+  body {
+  background-color: rgb(255,255,254);
+}
+h1 {  
+color: white;
+}
+h2 {  
+      font-family: 'ABeeZee';
+      font-size: 36px;
+}
+p {
+      font-family: 'ABeeZee';
+      font-size: 22px;
+}
+
+ body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("https://i.postimg.cc/MHLJqNmq/Boeing-787-8-maiden-flight-overhead-view.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+* {box-sizing: border-box}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Container needed to position the overlay. Adjust the width as needed */
+.imagetext {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+p{
+ text-align: center;
+}
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.imagetext:hover .overlay {
+  opacity: 1;
+}
+.imagetext {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 500px;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 175px;
+  background-color: #1f3b67;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #1E90FF;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #1f5d8e;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 175px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.dark-mode {
+  background-color: rgb(38, 40, 45);
+  color: white;
+}
+
+</style>
+<body>
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a class="active" href="video.html">Videos</a>
+  <a href="project.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div class="content">
+<div class="hero-image">
+<button onclick="DarkLight()">Dark Mode</button>
+<script>
+function DarkLight() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+  <div class="hero-text">
+    <h1>Videos</h1>
+    <h5>Here Are Some Of My Best YouTube Videos!</h5>
+  </div>
+</div>
+  <h2>Videos</h2>
+<hr>
+<iframe src="https://www.aparat.com/video/video/embed/videohash/ew2ri/vt/frame?titleShow=true&recom=self" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<hr>
+<iframe src="https://www.aparat.com/video/video/embed/videohash/inhZl/vt/frame?titleShow=true&recom=self" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<hr>
+<a href="https://www.youtube.com/@CaptainAliAhmadabadi/featured">My YouTube Channel</a>
+<hr>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<div class="footer">
+  <h6>© 2023 Ali Air</h6>
+  <h5>aliahmadabadi82@gmail.com</h5>
+  <div>
+  <h5>Website Built By Ali Bn GitHub. View Code Here:</h5><a href="https://github.com/AliAhmadabadi82/aliahmadabadi.com">View Code</a>
+  </div>
+</div>
+</div>
+</body>
+</html>
