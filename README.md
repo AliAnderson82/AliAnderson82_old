@@ -1,3 +1,3 @@
 # Ali's Website
 
-Hi, I am Ali! I code with Java and Python! This repository is my Website.
+Hi, I Am Ali! I Code With Java, Python, CSS, HTML 5 And Scratch! This Repository Is My Website.
